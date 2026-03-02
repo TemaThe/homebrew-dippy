@@ -1,4 +1,4 @@
-class Dippy < Formula
+class Dippy2 < Formula
   desc "Auto-approve safe shell commands for AI coding assistants (fork with script unfolding)"
   homepage "https://github.com/TemaThe/Dippy"
   url "https://github.com/TemaThe/Dippy.git", branch: "main"
@@ -9,8 +9,8 @@ class Dippy < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/dippy-hook" => "dippy"
-    bin.install_symlink libexec/"bin/dippy-statusline" => "dippy-statusline"
+    bin.install_symlink libexec/"bin/dippy-hook" => "dippy2"
+    bin.install_symlink libexec/"bin/dippy-statusline" => "dippy2-statusline"
   end
 
   def caveats
@@ -22,7 +22,7 @@ class Dippy < Formula
             "PreToolUse": [
               {
                 "matcher": "Bash",
-                "hooks": [{ "type": "command", "command": "dippy" }]
+                "hooks": [{ "type": "command", "command": "dippy2" }]
               }
             ]
           }
@@ -35,7 +35,7 @@ class Dippy < Formula
 
   test do
     input = '{"tool_name": "Bash", "tool_input": {"command": "ls"}}'
-    output = pipe_output(bin/"dippy", input)
+    output = pipe_output(bin/"dippy2", input)
     assert_match "allow", output
   end
 end
