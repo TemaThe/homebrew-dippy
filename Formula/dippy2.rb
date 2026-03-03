@@ -1,7 +1,7 @@
 class Dippy2 < Formula
   desc "Auto-approve safe shell commands for AI coding assistants (fork with script unfolding)"
-  homepage "https://github.com/TemaThe/Dippy"
-  url "https://github.com/TemaThe/Dippy.git", branch: "main"
+  homepage "https://github.com/TemaThe/Dippy2"
+  url "https://github.com/TemaThe/Dippy2.git", branch: "main"
   version "0.2.5-fork"
   license "MIT"
 
@@ -29,7 +29,7 @@ class Dippy2 < Formula
         }
 
       For configuration and fork-specific features:
-        https://github.com/TemaThe/Dippy
+        https://github.com/TemaThe/Dippy2
     EOS
   end
 
