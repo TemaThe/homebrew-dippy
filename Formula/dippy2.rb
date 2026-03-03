@@ -2,7 +2,7 @@ class Dippy2 < Formula
   desc "Auto-approve safe shell commands for AI coding assistants (fork with script unfolding)"
   homepage "https://github.com/TemaThe/Dippy2"
   url "https://github.com/TemaThe/Dippy2.git", branch: "main"
-  version "0.2.6-fork"
+  version "0.2.7-fork"
   license "MIT"
 
   depends_on "python"
